@@ -1,0 +1,20 @@
+ls: List directory contents.
+cd: Change directory.
+pwd: Print the current working directory.
+cp: Copy files or directories.
+mv: Move or rename files or directories.
+rm: Remove files or directories.
+mkdir: Create a new directory.
+rmdir: Remove an empty directory.
+touch: Create an empty file.
+cat: Display the content of a file.
+nano: A simple text editor.
+top: Display and manage processes.
+df: Display disk space usage.
+man: display the manual (documentation) pages for other commands.
+history: display a list of previously executed commands in the terminal session.
+tree: display the contents of a directory in a tree-like hierarchical format.
+grep: searching text patterns within files or command output.
+zip/unzip: compressing and decompressing files and directories in the ZIP format.
+apt: a package management tool used in Debian-based distributions.
+head/tail:  used to display the beginning and end of text files or command output, respectively.
