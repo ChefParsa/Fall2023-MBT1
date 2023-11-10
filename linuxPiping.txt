@@ -1,0 +1,29 @@
+In Linux, piping is a powerful and fundamental concept that allows you to take the output of one command and use it as the input for another command. This is done using the pipe symbol (|). Piping enables the creation of a sequence of commands, where the output of each command becomes the input for the next one.
+
+Here's a basic overview of how piping works:
+
+	command1 | command2
+	
+In this example, the output of command1 is passed as input to command2. This can be extended to create longer command chains.
+
+Example:
+Let's say you want to list the files in a directory and then search for a specific file in that list. You can use the ls command to list the files and the grep command to search for a specific file:
+
+	ls | grep "example"
+
+ Let's consider a simple example where we use piping to filter the list of files in a directory and count how many files have a specific extension.
+
+Assuming you are in a directory with various files, and you want to count how many of them are text files (files with a '.txt' extension), you can use the 'ls' command to list the files and then pipe the output to the 'grep' and 'wc' commands.
+
+Here's the command:
+
+	ls | grep ".txt" | wc -l
+
+Breaking it down:
+
+'ls': Lists all files in the current directory.
+'grep ".txt"': Filters the list to include only lines containing ".txt" (text files).
+'wc -l': Counts the number of lines in the filtered output, which corresponds to the number of text files.
+So, when you run this command, it will display the count of text files in the current directory.
+
+This is a straightforward example of how piping allows you to combine the output of one command as the input for another, creating a powerful and flexible way to process data in the Linux command line.
